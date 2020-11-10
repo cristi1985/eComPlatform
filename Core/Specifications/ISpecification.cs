@@ -9,5 +9,7 @@ namespace Core.Specifications
     {
         Expression<Func<T, bool>>Criteria { get; } // functie generic care returneaza un boolean
         List<Expression<Func<T, object>>> Includes { get;  } //returneaza un obiect
+        Expression<Func<T, object>> OrderBy { get; }
+        Expression<Func<T, object>> OrderByDescending { get; }
     }
 }
