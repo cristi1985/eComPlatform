@@ -1,8 +1,12 @@
 {
   "ExpandedNodes": [
     "",
-    "\\e2e"
+    "\\e2e",
+    "\\src",
+    "\\src\\app",
+    "\\src\\app\\nav-bar",
+    "\\src\\assets"
   ],
-  "SelectedNode": "\\.gitignore",
+  "SelectedNode": "\\src\\app\\app.component.ts",
   "PreviewInSolutionExplorer": false
 }
