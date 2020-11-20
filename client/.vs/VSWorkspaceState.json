@@ -4,9 +4,11 @@
     "\\e2e",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\nav-bar",
-    "\\src\\assets"
+    "\\src\\app\\core",
+    "\\src\\app\\core\\nav-bar",
+    "\\src\\app\\shared",
+    "\\src\\app\\shop"
   ],
-  "SelectedNode": "\\src\\app\\app.component.ts",
+  "SelectedNode": "\\src\\app\\app.component.html",
   "PreviewInSolutionExplorer": false
 }
