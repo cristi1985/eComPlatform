@@ -1,16 +1,16 @@
 {
   "ExpandedNodes": [
     "",
-    "\\e2e",
     "\\src",
     "\\src\\app",
     "\\src\\app\\core",
     "\\src\\app\\core\\nav-bar",
-    "\\src\\app\\shared",
-    "\\src\\app\\shared\\models",
-    "\\src\\app\\shop",
-    "\\src\\app\\shop\\product-item"
+    "\\src\\app\\home",
+    "\\src\\app\\shared\\components",
+    "\\src\\app\\shared\\components\\paging-header",
+    "\\src\\app\\shared\\pager",
+    "\\src\\app\\shop\\product-details"
   ],
-  "SelectedNode": "\\src\\app\\shop\\shop.component.ts",
+  "SelectedNode": "\\src\\app\\core\\core.module.ts",
   "PreviewInSolutionExplorer": false
 }
