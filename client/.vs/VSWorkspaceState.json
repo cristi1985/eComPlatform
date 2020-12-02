@@ -4,13 +4,10 @@
     "\\src",
     "\\src\\app",
     "\\src\\app\\core",
-    "\\src\\app\\core\\nav-bar",
-    "\\src\\app\\home",
-    "\\src\\app\\shared\\components",
+    "\\src\\app\\shared",
     "\\src\\app\\shared\\components\\paging-header",
-    "\\src\\app\\shared\\pager",
-    "\\src\\app\\shop\\product-details"
+    "\\src\\app\\shop"
   ],
-  "SelectedNode": "\\src\\app\\core\\core.module.ts",
+  "SelectedNode": "\\src\\app\\shop\\shop-routing.module.ts",
   "PreviewInSolutionExplorer": false
 }
