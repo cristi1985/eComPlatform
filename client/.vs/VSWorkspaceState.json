@@ -5,9 +5,12 @@
     "\\src\\app",
     "\\src\\app\\core",
     "\\src\\app\\core\\interceptors",
+    "\\src\\app\\core\\section-header",
+    "\\src\\app\\core\\server-error",
     "\\src\\app\\core\\test-error",
+    "\\src\\app\\shop",
     "\\src\\environments"
   ],
-  "SelectedNode": "\\src",
+  "SelectedNode": "\\src\\app\\core\\section-header\\section-header.component.ts",
   "PreviewInSolutionExplorer": false
 }
