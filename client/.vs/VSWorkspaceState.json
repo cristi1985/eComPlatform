@@ -5,12 +5,11 @@
     "\\src\\app",
     "\\src\\app\\core",
     "\\src\\app\\core\\interceptors",
-    "\\src\\app\\core\\section-header",
-    "\\src\\app\\core\\server-error",
-    "\\src\\app\\core\\test-error",
-    "\\src\\app\\shop",
-    "\\src\\environments"
+    "\\src\\app\\core\\services",
+    "\\src\\app\\shared",
+    "\\src\\app\\shared\\models",
+    "\\src\\app\\shared\\pager",
+    "\\src\\assets"
   ],
-  "SelectedNode": "\\src\\app\\core\\section-header\\section-header.component.ts",
   "PreviewInSolutionExplorer": false
 }
