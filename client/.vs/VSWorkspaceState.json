@@ -3,13 +3,14 @@
     "",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\core",
-    "\\src\\app\\core\\interceptors",
-    "\\src\\app\\core\\services",
+    "\\src\\app\\home",
     "\\src\\app\\shared",
     "\\src\\app\\shared\\models",
     "\\src\\app\\shared\\pager",
+    "\\src\\app\\shop",
+    "\\src\\app\\shop\\product-details",
     "\\src\\assets"
   ],
+  "SelectedNode": "\\src\\app\\shop\\shop.component.html",
   "PreviewInSolutionExplorer": false
 }
