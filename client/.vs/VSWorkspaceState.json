@@ -3,14 +3,14 @@
     "",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\core",
-    "\\src\\app\\core\\nav-bar",
-    "\\src\\app\\core\\not-found",
+    "\\src\\app\\basket",
     "\\src\\app\\core\\section-header",
     "\\src\\app\\core\\server-error",
     "\\src\\app\\core\\services",
-    "\\src\\app\\core\\test-error"
+    "\\src\\app\\core\\test-error",
+    "\\src\\app\\shop",
+    "\\src\\app\\shop\\product-details"
   ],
-  "SelectedNode": "\\src\\app\\basket\\basket.component.html",
+  "SelectedNode": "\\src\\app\\shop\\product-details\\product-details.component.html",
   "PreviewInSolutionExplorer": false
 }
