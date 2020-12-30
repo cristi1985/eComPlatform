@@ -4,13 +4,13 @@
     "\\src",
     "\\src\\app",
     "\\src\\app\\basket",
-    "\\src\\app\\core\\section-header",
-    "\\src\\app\\core\\server-error",
-    "\\src\\app\\core\\services",
-    "\\src\\app\\core\\test-error",
-    "\\src\\app\\shop",
-    "\\src\\app\\shop\\product-details"
+    "\\src\\app\\shared",
+    "\\src\\app\\shared\\components",
+    "\\src\\app\\shared\\components\\order-totals",
+    "\\src\\app\\shared\\components\\paging-header",
+    "\\src\\app\\shared\\models",
+    "\\src\\app\\shop"
   ],
-  "SelectedNode": "\\src\\app\\shop\\product-details\\product-details.component.html",
+  "SelectedNode": "\\src\\app\\basket\\basket.component.ts",
   "PreviewInSolutionExplorer": false
 }
