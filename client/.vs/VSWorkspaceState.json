@@ -4,13 +4,13 @@
     "\\src",
     "\\src\\app",
     "\\src\\app\\basket",
-    "\\src\\app\\shared",
+    "\\src\\app\\checkout",
     "\\src\\app\\shared\\components",
     "\\src\\app\\shared\\components\\order-totals",
     "\\src\\app\\shared\\components\\paging-header",
     "\\src\\app\\shared\\models",
-    "\\src\\app\\shop"
+    "\\src\\app\\shop\\product-details"
   ],
-  "SelectedNode": "\\src\\app\\basket\\basket.component.ts",
+  "SelectedNode": "\\.gitignore",
   "PreviewInSolutionExplorer": false
 }
