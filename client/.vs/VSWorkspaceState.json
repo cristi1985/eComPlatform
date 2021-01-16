@@ -3,14 +3,14 @@
     "",
     "\\src",
     "\\src\\app",
+    "\\src\\app\\account",
     "\\src\\app\\basket",
     "\\src\\app\\checkout",
+    "\\src\\app\\core",
+    "\\src\\app\\shared",
     "\\src\\app\\shared\\components",
-    "\\src\\app\\shared\\components\\order-totals",
-    "\\src\\app\\shared\\components\\paging-header",
-    "\\src\\app\\shared\\models",
-    "\\src\\app\\shop\\product-details"
+    "\\src\\app\\shared\\models"
   ],
-  "SelectedNode": "\\.gitignore",
+  "SelectedNode": "\\src\\app\\account\\account.service.ts",
   "PreviewInSolutionExplorer": false
 }
