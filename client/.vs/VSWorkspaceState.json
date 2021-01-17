@@ -4,13 +4,14 @@
     "\\src",
     "\\src\\app",
     "\\src\\app\\account",
-    "\\src\\app\\basket",
-    "\\src\\app\\checkout",
+    "\\src\\app\\account\\login",
     "\\src\\app\\core",
+    "\\src\\app\\core\\nav-bar",
     "\\src\\app\\shared",
     "\\src\\app\\shared\\components",
-    "\\src\\app\\shared\\models"
+    "\\src\\assets",
+    "\\src\\environments"
   ],
-  "SelectedNode": "\\src\\app\\account\\account.service.ts",
+  "SelectedNode": "\\src\\app\\core\\nav-bar\\nav-bar.component.ts",
   "PreviewInSolutionExplorer": false
 }

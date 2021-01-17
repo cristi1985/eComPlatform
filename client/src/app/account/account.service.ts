@@ -19,7 +19,10 @@ export class AccountService {
   }
 
   login(values: any) {
+    console.log('login1',this.baseUrl + 'account/login');
+    console.log('values',values)
     return this.http.post(this.baseUrl + 'account/login', values).pipe(
+      
       map((user: any) => {
         if (user) {
           localStorage.setItem('token', user.token);
