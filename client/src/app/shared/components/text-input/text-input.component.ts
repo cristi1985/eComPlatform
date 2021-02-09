@@ -26,7 +26,8 @@ export class TextInputComponent implements OnInit, ControlValueAccessor {
     control?.setAsyncValidators(asyncValidators);
     control?.updateValueAndValidity();
   }
-  onChange(event:any) { };
+  //On change even of type any is causing issues on the front-end this has to be changed
+  onChange(event: any) { };
   onTouched() { };
   writeValue(obj: any): void {
     this.input.nativeElement.value = obj || '';

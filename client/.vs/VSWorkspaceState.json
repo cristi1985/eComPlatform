@@ -3,15 +3,13 @@
     "",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\account",
-    "\\src\\app\\account\\login",
-    "\\src\\app\\core",
     "\\src\\app\\core\\nav-bar",
     "\\src\\app\\shared",
     "\\src\\app\\shared\\components",
+    "\\src\\app\\shared\\components\\text-input",
     "\\src\\assets",
     "\\src\\environments"
   ],
-  "SelectedNode": "\\src\\app\\account\\login\\login.component.ts",
+  "SelectedNode": "\\src\\app\\shared\\components\\text-input\\text-input.component.ts",
   "PreviewInSolutionExplorer": false
 }
