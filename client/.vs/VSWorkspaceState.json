@@ -5,12 +5,12 @@
     "\\src\\app",
     "\\src\\app\\account",
     "\\src\\app\\account\\login",
-    "\\src\\app\\account\\register",
-    "\\src\\app\\shared\\components",
-    "\\src\\app\\shared\\components\\text-input",
-    "\\src\\assets",
-    "\\src\\environments"
+    "\\src\\app\\core",
+    "\\src\\app\\core\\interceptors",
+    "\\src\\app\\core\\nav-bar",
+    "\\src\\app\\shared",
+    "\\src\\app\\shared\\models"
   ],
-  "SelectedNode": "\\src\\app\\account\\register\\register.component.ts",
+  "SelectedNode": "\\src\\app\\account\\account.service.ts",
   "PreviewInSolutionExplorer": false
 }
