@@ -1,1 +1,28 @@
-<p>checkout-address works!</p>
+<div class="mt-4" [formGroup]="checkoutForm">
+  <div class="d-flex justify-content-between align-items-center">
+    <h4>Adresa livrare</h4>
+    <button class="btn btn-outline-success mb-3"> Salvare ca adresa default</button>
+  </div>
+  <div class="row" formGroupName="addressForm">
+    <div class="form-group col-6">
+      <app-text-input [label]="'Prenume'" formControlName="firstName"></app-text-input>
+    </div>
+    <div class="form-group col-6">
+      <app-text-input [label]="'Nume'" formControlName="lastName"></app-text-input>
+    </div>
+    <div class="form-group col-6">
+      <app-text-input [label]="'Strada'" formControlName="street"></app-text-input>
+    </div>
+    <div class="form-group col-6">
+      <app-text-input [label]="'Oras'" formControlName="city"></app-text-input>
+    </div>
+    <div class="form-group col-6">
+      <app-text-input [label]="'Judet'" formControlName="state"></app-text-input>
+    </div>
+    <div class="form-group col-6">
+      <app-text-input [label]="'Cod Postal'" formControlName="zipcode"></app-text-input>
+    </div>
+
+
+  </div>
+</div>
