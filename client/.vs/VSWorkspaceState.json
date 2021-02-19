@@ -3,14 +3,14 @@
     "",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\account",
-    "\\src\\app\\account\\login",
-    "\\src\\app\\core",
+    "\\src\\app\\checkout",
+    "\\src\\app\\checkout\\checkout-payment",
+    "\\src\\app\\checkout\\checkout-review",
     "\\src\\app\\core\\interceptors",
-    "\\src\\app\\core\\nav-bar",
     "\\src\\app\\shared",
-    "\\src\\app\\shared\\models"
+    "\\src\\app\\shared\\components",
+    "\\src\\app\\shared\\components\\basket-summary"
   ],
-  "SelectedNode": "\\src\\app\\account\\account.service.ts",
+  "SelectedNode": "\\src\\app\\checkout\\checkout-payment\\checkout-payment.component.html",
   "PreviewInSolutionExplorer": false
 }
