@@ -1,23 +1,23 @@
-<div class="bg-light px-4 py-3 text-uppercase font-weight-bold">
+<div class="bg-light px-4 text-uppercase font-weight-bold" style="padding:1.20em">
    Sumar comanda
 </div>
 <div class="p-4">
   <p class="font-italic mb-4">Costurile de expediere vor fi adaugate in functie de
   optiunile selectate la momentul finalizarii comenzii</p>
-  <ul class="list-unstyled mb-4" *ngIf="(basketTotal$ | async) as totals">
+  <ul class="list-unstyled mb-4">
     <li class="d-flex justify-content-between py-3 border-bottom">
       <strong class="text-muted"> Subtotal</strong>
-      <strong> {{totals.subtotal | currency}}</strong>
+      <strong> {{subtotal | currency}}</strong>
     </li>
 
     <li class="d-flex justify-content-between py-3 border-bottom">
       <strong class="text-muted"> Costuri expediere</strong>
-      <strong> {{totals.shipping | currency}}</strong>
+      <strong> {{shippingPrice | currency}}</strong>
     </li>
 
     <li class="d-flex justify-content-between py-3 border-bottom">
       <strong class="text-muted"> Costuri Totale</strong>
-      <strong> {{totals.total | currency}}</strong>
+      <strong> {{total | currency}}</strong>
     </li>
   </ul>
 

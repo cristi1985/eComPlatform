@@ -2,5 +2,6 @@
   <div><i class="fa fa-check-circle fa-5x" style="color:green"></i></div>
   <h2>Multumim, Comanda dvs este confirmata</h2>
   <p class="mb-4">Veti fi notificat in momentul in care comanda dvs a fost preluata de curier</p>
-  <button class="btn btn-outline-success">Vizualizati comanda plasata</button>
+  <button *ngIf="order" routerLink="/orders/{{order?.id}}" class="btn btn-outline-success">Vizualizati comanda dvs</button>
+  <button *ngIf="!order" routerLink="/orders" class="btn btn-outline-success">Vizualizati comenzile anterioare</button>
 </div>

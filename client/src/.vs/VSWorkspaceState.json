@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\app",
+    "\\app\\checkout",
+    "\\app\\checkout\\checkout-payment",
+    "\\app\\checkout\\checkout-success",
+    "\\app\\shared",
+    "\\app\\shared\\components",
+    "\\app\\shared\\components\\basket-summary",
+    "\\app\\shared\\components\\order-totals",
+    "\\app\\shared\\models"
+  ],
+  "SelectedNode": "\\app\\checkout\\checkout-routing.module.ts",
+  "PreviewInSolutionExplorer": false
+}
