@@ -4,13 +4,12 @@
     "\\src",
     "\\src\\app",
     "\\src\\app\\orders",
-    "\\src\\app\\orders\\order-detailed",
     "\\src\\app\\shared",
     "\\src\\app\\shared\\components",
+    "\\src\\app\\shared\\components\\basket-summary",
     "\\src\\app\\shared\\components\\order-totals",
     "\\src\\app\\shared\\components\\stepper",
-    "\\src\\app\\shared\\models"
+    "\\src\\app\\shop"
   ],
-  "SelectedNode": "\\src\\app\\orders\\orders-routing.module.ts",
   "PreviewInSolutionExplorer": false
 }
