@@ -35,9 +35,9 @@ namespace Infrastructure.Services
             var basket = await _basketRepository.GetBasketAsync(basketId);
             var shippingPrice = 0m;
 
-            if(basket.DelyveryMethodId.HasValue)
+            if(basket.DeliveryMethodId.HasValue)
             {
-                var deliveryMethod = await _unitOfWork.Repository<DeliveryMethod>().GetByIdAsync((int)basket.DelyveryMethodId);
+                var deliveryMethod = await _unitOfWork.Repository<DeliveryMethod>().GetByIdAsync((int)basket.DeliveryMethodId);
                 shippingPrice = deliveryMethod.Price;
             }
 
