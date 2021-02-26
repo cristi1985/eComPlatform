@@ -3,14 +3,14 @@
     "",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\basket",
     "\\src\\app\\checkout",
+    "\\src\\app\\checkout\\checkout-review",
     "\\src\\app\\shared",
     "\\src\\app\\shared\\components",
     "\\src\\app\\shared\\components\\order-totals",
     "\\src\\app\\shared\\components\\stepper",
     "\\src\\app\\shared\\models"
   ],
-  "SelectedNode": "\\src\\app\\basket\\basket.service.ts",
+  "SelectedNode": "\\src\\app\\checkout\\checkout-review\\checkout-review.component.html",
   "PreviewInSolutionExplorer": false
 }

@@ -15,6 +15,7 @@ import { v4 as uuidv4 } from 'uuid';
     clientSecret?: string;
     paymentIntentId?: string;
     deliveryMethodId?: number;
+    shippingPrice?: number;
   }
 
 export class Basket implements IBasket {
