@@ -23,6 +23,8 @@ export class CheckoutPaymentComponent implements AfterViewInit, OnDestroy {
   cardExpiry: any;
   cardCvc: any;
   cardError: any;
+  cardHandler = this.onChange.bind(this);
+
   constructor(private basketService: BasketService,
     private checkoutService: CheckoutService,
     private toastr: ToastrService,
@@ -36,13 +38,18 @@ export class CheckoutPaymentComponent implements AfterViewInit, OnDestroy {
 
     this.cardNumber = elements.create('cardNumber');
     this.cardNumber.mount(this.cardNumberElement.nativeElement);
+    this.cardNumber.addEventListener('change', this.cardHandler);
 
     this.cardExpiry = elements.create('cardExpiry');
     this.cardExpiry.mount(this.cardExpiryElement.nativeElement);
+    this.cardExpiry.addEventListener('change', this.cardHandler);
 
     this.cardCvc = elements.create('cardCvc');
     this.cardCvc.mount(this.cardCvcElement.nativeElement);
+    this.cardCvc.addEventListener('change', this.cardHandler);
   }
+
+
 
   ngOnDestroy(): void {
     this.cardNumber.destroy();
@@ -50,14 +57,40 @@ export class CheckoutPaymentComponent implements AfterViewInit, OnDestroy {
     this.cardCvc.destroy();
   }
 
+  onChange({ error }) {
+    if (error) {
+      this.cardError = error.message;
+    } else {
+      this.cardError = null;
+    }
+  }
+
   submitOrder() {
     const basket = this.basketService.getCurrentBasketValue();
     const orderToCreate = this.getOrderToCreate(basket);
     this.checkoutService.createOrder(orderToCreate).subscribe((order: IOrder) => {
       this.toastr.success('Comanda a fost plasata');
-      this.basketService.deleteLocalBasket(basket.id);
-      const navigationExtras: NavigationExtras = { state: order };
-      this.router.navigate(['checkout/success'], navigationExtras)
+      this.stripe.confirmCardPayment(basket.clientSecret, {
+        payment_method: {
+          card: this.cardNumber,
+          billing_details: {
+            name:this.checkoutForm.get('paymentForm').get('nameOnCard').value
+          }
+        }
+      }).then(result => {
+        console.log(result);
+        if (result.paymentIntent) {
+          this.basketService.deleteLocalBasket(basket.id);
+          const navigationExtras: NavigationExtras = { state: order };
+          this.router.navigate(['checkout/success'], navigationExtras);
+        } else {
+          this.toastr.error(result.error.message);
+        }
+
+      })
+      //this.basketService.deleteLocalBasket(basket.id);
+      //const navigationExtras: NavigationExtras = { state: order };
+      //this.router.navigate(['checkout/success'], navigationExtras)
     }, error => {
         this.toastr.error(error.message);
         console.log(error);

@@ -9,7 +9,7 @@
           <app-checkout-delivery [checkoutForm]="checkoutForm"></app-checkout-delivery>
         </cdk-step>
         <cdk-step [label]="'Verificare'">
-          <app-checkout-review></app-checkout-review>
+          <app-checkout-review [appStepper]="appStepper"></app-checkout-review>
         </cdk-step>
         <cdk-step [label]="'Plata'" >
           <app-checkout-payment [checkoutForm]="checkoutForm"></app-checkout-payment>

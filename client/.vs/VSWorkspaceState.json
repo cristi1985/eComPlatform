@@ -3,14 +3,14 @@
     "",
     "\\src",
     "\\src\\app",
+    "\\src\\app\\basket",
     "\\src\\app\\checkout",
-    "\\src\\app\\checkout\\checkout-review",
+    "\\src\\app\\checkout\\checkout-delivery",
+    "\\src\\app\\checkout\\checkout-payment",
     "\\src\\app\\shared",
     "\\src\\app\\shared\\components",
-    "\\src\\app\\shared\\components\\order-totals",
-    "\\src\\app\\shared\\components\\stepper",
-    "\\src\\app\\shared\\models"
+    "\\src\\app\\shared\\components\\text-input"
   ],
-  "SelectedNode": "\\src\\app\\checkout\\checkout-review\\checkout-review.component.html",
+  "SelectedNode": "\\src\\app\\checkout\\checkout-payment\\checkout-payment.component.ts",
   "PreviewInSolutionExplorer": false
 }
