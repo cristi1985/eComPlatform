@@ -3,11 +3,10 @@
     "",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\basket",
     "\\src\\app\\checkout",
     "\\src\\app\\checkout\\checkout-delivery",
     "\\src\\app\\checkout\\checkout-payment",
-    "\\src\\app\\shared",
+    "\\src\\app\\checkout\\checkout-review",
     "\\src\\app\\shared\\components",
     "\\src\\app\\shared\\components\\text-input"
   ],

@@ -14,10 +14,12 @@ namespace Infrastructure.Services
     {
         private readonly IBasketRepository _basketRepo;
         private readonly IUnitOfWork _unitOfWork;
-        public OrderService(IUnitOfWork unitOfWork, IBasketRepository basketRepo)
+        private readonly IPaymentService _paymentService;
+        public OrderService(IUnitOfWork unitOfWork, IBasketRepository basketRepo, IPaymentService paymentService)
         {
             _unitOfWork = unitOfWork;
             _basketRepo = basketRepo;
+            _paymentService = paymentService;
         }
         public async Task<Order> CreateOrderAsync(string buyerEmail, int deliveryMethodId, string basketId, Address shippingAddress)
         {
@@ -37,8 +39,19 @@ namespace Infrastructure.Services
             var deliveryMethod = await _unitOfWork.Repository<DeliveryMethod>().GetByIdAsync(deliveryMethodId);
             //calc subtotal
             var subtotal = items.Sum(item => item.Price * item.Quantity);
+
+            //check if we have the order in the db
+            var spec = new OrderByPaymentIntentIdWithItemsSpecification(basket.PaymentIntentId);
+            var existingOrder = await _unitOfWork.Repository<Order>().GetEntityWithSpec(spec);
+
+            if(existingOrder !=null)
+            {
+                _unitOfWork.Repository<Order>().Delete(existingOrder);
+                await _paymentService.CreateOrUpdatePaymentIntent(basket.PaymentIntentId);
+            }
+            
             //create order
-            var order = new Order(items, buyerEmail, shippingAddress, deliveryMethod, subtotal);
+            var order = new Order(items, buyerEmail, shippingAddress, deliveryMethod, subtotal, basket.PaymentIntentId);
 
             //Save to db
             _unitOfWork.Repository<Order>().Add(order);
@@ -47,8 +60,6 @@ namespace Infrastructure.Services
             {
                 return null;
             }
-            //delete basket
-            await _basketRepo.DeleteBasketAsync(basketId);
 
             //return order
             return order;
