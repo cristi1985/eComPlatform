@@ -4,11 +4,12 @@
     "\\src",
     "\\src\\app",
     "\\src\\app\\checkout",
-    "\\src\\app\\checkout\\checkout-delivery",
+    "\\src\\app\\checkout\\checkout-address",
     "\\src\\app\\checkout\\checkout-payment",
     "\\src\\app\\checkout\\checkout-review",
+    "\\src\\app\\shared",
     "\\src\\app\\shared\\components",
-    "\\src\\app\\shared\\components\\text-input"
+    "\\src\\app\\shared\\components\\stepper"
   ],
   "SelectedNode": "\\src\\app\\checkout\\checkout-payment\\checkout-payment.component.ts",
   "PreviewInSolutionExplorer": false

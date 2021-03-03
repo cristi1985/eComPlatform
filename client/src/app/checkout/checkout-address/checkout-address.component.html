@@ -33,7 +33,7 @@
   <button class="btn-outline-primary" routerLink="/basket">
     <i class="fa fa-angle-left"></i>  Inapoi la cos
   </button>
-  <button class="btn-primary" cdkStepperNext>
+  <button [disabled]="checkoutForm.get('addressForm').invalid" class="btn-primary" cdkStepperNext>
     Catre livrare <i class="fa fa-angle-right"></i>
   </button>
 </div>
