@@ -3,14 +3,14 @@
     "",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\checkout",
-    "\\src\\app\\checkout\\checkout-address",
-    "\\src\\app\\checkout\\checkout-payment",
-    "\\src\\app\\checkout\\checkout-review",
     "\\src\\app\\shared",
     "\\src\\app\\shared\\components",
-    "\\src\\app\\shared\\components\\stepper"
+    "\\src\\app\\shared\\components\\stepper",
+    "\\src\\app\\shared\\components\\text-input",
+    "\\src\\app\\shared\\models",
+    "\\src\\app\\shared\\pager",
+    "\\src\\app\\shop"
   ],
-  "SelectedNode": "\\src\\app\\checkout\\checkout-payment\\checkout-payment.component.ts",
+  "SelectedNode": "\\src\\app\\app-routing.module.ts",
   "PreviewInSolutionExplorer": false
 }

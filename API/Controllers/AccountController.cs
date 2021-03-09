@@ -98,7 +98,7 @@ namespace API.Controllers
         {
             if(CheckEmailExistsAsync(registerDto.Email).Result.Value)
             {
-                return BadRequestObjectResult(new ApiValidationErrorResponse { Errors = new[] { "Email address is in use" }});
+                return BadRequestObjectResult(new ApiValidationErrorResponse { Errors = new[] { "Adresa de e-mail este utilizata" }});
             }
             var user = new AppUser
             {

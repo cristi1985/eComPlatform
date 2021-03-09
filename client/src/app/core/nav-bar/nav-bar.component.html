@@ -12,7 +12,7 @@
     </a>
     <ng-container *ngIf="(currentUser$ | async) === null">
       <a routerLink="/account/login" class="btn btn-outline-secondary mr-2">Login</a>
-      <a routerLink="/account/register" class="btn btn-outline-secondary mr-3">Sign up</a>
+      <a routerLink="/account/register" class="btn btn-outline-secondary mr-3">Inregistrare</a>
     </ng-container>
 
     <ng-container *ngIf="currentUser$ | async">
@@ -22,10 +22,10 @@
         </a>
         <div class="dropdown-menu dropdown-menu-right" style="cursor:pointer;" *dropdownMenu>
           <a routerLink="/basket" class="dropdown-item d-flex align-items-center py-2">
-            <i class="fa fa-shopping-cart mr-3"></i>View Basket
+            <i class="fa fa-shopping-cart mr-3"></i>Vizualizati cos
           </a>
           <a routerLink="/orders" class="dropdown-item d-flex align-items-center py-2">
-            <i class="fa fa-history mr-3"></i>View Orders
+            <i class="fa fa-history mr-3"></i>Vizualizati comenzi
           </a>
           <div class="dropdown-divider"></div>
           <a (click)="logout()" class="dropdown-item d-flex align-items-center py-2">

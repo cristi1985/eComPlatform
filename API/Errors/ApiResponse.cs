@@ -21,10 +21,10 @@ namespace API.Errors
         {
             return statusCode switch
             {
-                400 => "A bad request you have made",
-                401 => "Authorized you are not",
-                404 => "Resource found, it was not",
-                500 => "Errors are the path to the dark side. Errors lead to anger. Anger leads to hate. Hate leads to career change",
+                400 => "Requestul este incorect",
+                401 => "Nu sunteti autorizati",
+                404 => "Resursa nu a fost gasita",
+                500 => "Eroare generala server",
                 _ => null
             };
         }
