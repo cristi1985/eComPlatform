@@ -3,14 +3,14 @@
     "",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\shared",
-    "\\src\\app\\shared\\components",
-    "\\src\\app\\shared\\components\\stepper",
-    "\\src\\app\\shared\\components\\text-input",
-    "\\src\\app\\shared\\models",
-    "\\src\\app\\shared\\pager",
-    "\\src\\app\\shop"
+    "\\src\\app\\basket",
+    "\\src\\app\\checkout",
+    "\\src\\app\\checkout\\checkout-address",
+    "\\src\\app\\checkout\\checkout-delivery",
+    "\\src\\app\\core",
+    "\\src\\app\\core\\interceptors",
+    "\\src\\app\\core\\services"
   ],
-  "SelectedNode": "\\src\\app\\app-routing.module.ts",
+  "SelectedNode": "\\src\\app\\app.component.spec.ts",
   "PreviewInSolutionExplorer": false
 }
