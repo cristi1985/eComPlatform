@@ -10,35 +10,35 @@ describe('ShopComponent', () => {
 
   beforeEach(() => {
     const shopServiceStub = () => ({
-
-      // pageIndex?: number;
-      // pageSize?: number;
-      // count?: number;
-      // data?: IProduct[];
-      // id?: number;
-      // productName?: string;
-      // description?: string;
-      // pictureUrl?: string;
-      // price?: number;
-      // productType?: string;
-      // productBrand?: string;
-
       getProducts(){ return of ({shopParams:{
         pageIndex:1,
         pageSize:1,
-        count:1
-        //to do to continue with implementation here
-
-
+        count:1,
+        data:{
+          id:1,
+          productName:'Test Product',
+          description:'Description Test',
+          pictureUrl:'localhost',
+          price:200,
+          productType:'Hat',
+          prodctBrand:'Nike'
+        }
       }})},
       getBrands(){return of({data:
         {
           id: 1,
-         name: "Test Brand "
+         name: "Test Brand"
         }
-      })},
-      getTypes: () => ({ subscribe: f => f({}) })
-    });
+      },{data:{
+        id:2,
+        name:"Famous Brand"
+      }})},
+      getTypes() {return of ({ 
+        id:1,
+        name:'Hat'
+      })}
+    })
+    ;
     TestBed.configureTestingModule({
       schemas: [NO_ERRORS_SCHEMA],
       declarations: [ShopComponent],
@@ -117,16 +117,18 @@ describe('ShopComponent', () => {
     });
   });
 
-  describe('onSearch', () => {
+  // describe('onSearch', () => {
    
-    it('makes expected calls', async(() => {
-      //component.searchTerm.nativeElement.value="boots";
-      fixture.detectChanges();
-      spyOn(component, 'getProducts').and.callThrough();
-      component.onSearch();
-      expect(component.getProducts).toHaveBeenCalled();
-    }));
-  });
+  //   it('makes expected calls', (() => {
+  //     component.searchTerm.nativeElement.value="hat";
+  //     const shopServiceStub: ShopService = fixture.debugElement.injector.get(
+  //       ShopService
+  //     );
+  //     spyOn(shopServiceStub, 'getProducts').and.callThrough();
+  //     component.onSearch();
+  //     expect(shopServiceStub.getProducts).toHaveBeenCalled();
+  //   }));
+  // });
 
   // describe('onReset', () => {
   //   it('makes expected calls', () => {
