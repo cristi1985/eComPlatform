@@ -1,16 +1,35 @@
 <carousel>
   <slide>
-    <img src="assets/images/hero1.jpg" alt="first slide" style="display: block; width:100%;" />
+    <img src="assets/images/hero1.jpg" alt="first slide" style="display: block;  width:100%;" />
   </slide>
   <slide>
-    <img src="assets/images/hero2.jpg" alt="second slide" style="display: block; width:100%;" />
+    <img src="assets/images/hero2.jpg" alt="second slide" style="display: block;  width:100%;" />
   </slide>
   <slide>
-    <img src="assets/images/hero2.jpg" alt="third slide" style="display: block; width:100%;" />
+    <img src="assets/images/hero2.jpg" alt="third slide" style="display: block;  width:100%;" />
   </slide>
 </carousel>
 <section class="featured">
  <div class="d-flex justify-content-center pt-4">
    <h1>Bine ati venit in magazin</h1>
  </div>
+
+ <ng-container *ngIf="types?.length">
+ <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+  <div class="col" *ngFor="let type of types"
+    [class.active]="type.id===this.shopParams.typeId"
+              [value]="type.id"
+              (click)="btnClick()">
+    <div class="card shadow-sm">
+      <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em" >Thumbnail</text></svg>
+
+      <div class="card-body">
+        <p class="card-text"  >{{type.name}}</p>
+      </div>
+      
+    </div>
+  </div>
+ </div>
+ </ng-container>
+
 </section>
