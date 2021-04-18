@@ -1,18 +1,18 @@
 [
   {
     "Id": 1,
-    "Name": "Boards"
+    "Name": "Placi Snow Board"
   },
   {
     "Id": 2,
-    "Name": "Hats"
+    "Name": "Caciuli"
   },
   {
     "Id": 3,
-    "Name": "Boots"
+    "Name": "Ghete"
   },
   {
     "Id": 4,
-    "Name": "Gloves"
+    "Name": "Manusi"
   }
 ]

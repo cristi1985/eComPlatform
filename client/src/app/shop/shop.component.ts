@@ -5,6 +5,9 @@ import { error } from '@angular/compiler/src/util';
 import { IBrand } from '../shared/models/brands';
 import { IType } from '../shared/models/productType';
 import { ShopParams } from '../shared/models/shopParams';
+import { ActivatedRoute } from '@angular/router';
+import {filter} from 'rxjs/operators';
+import { ThisReceiver } from '@angular/compiler';
 
 @Component({
   selector: 'app-shop',
@@ -18,18 +21,32 @@ export class ShopComponent implements OnInit {
   types: IType[] = [];
   shopParams = new ShopParams();
   totalCount: number=0;
+  filter:number;
   sortOptions = [
     { name: 'Alfabetic', value: 'name' },
     { name: 'Pret descrescator', value: 'priceDesc' },
     { name: 'Pret crescator', value: 'priceAsc' },
   ]
 
-  constructor(private shopService: ShopService) { }
+  constructor(private shopService: ShopService, private route:ActivatedRoute) { }
 
   ngOnInit(): void {
     this.getProducts();
     this.getBrands();
     this.getTypes();
+    this.route.queryParams.pipe(filter(params=> params.filter)).subscribe(
+      params =>{
+        this.filter = params.filter;
+        if(this.filter !=undefined && this.filter != 0){
+          this.onTypeSelected(this.filter);
+        }
+      },
+      error =>{
+        console.log(error);
+      } 
+    );
+
+    
     
   }
 

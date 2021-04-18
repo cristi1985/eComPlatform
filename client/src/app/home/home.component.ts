@@ -20,8 +20,9 @@ export class HomeComponent implements OnInit {
   constructor(private router: Router, private shopService: ShopService) { 
     
   }
-  btnClick (){
-    this.router.navigateByUrl('/shop')
+  btnClick (typeId:number){
+    console.log("typeId", typeId);
+    this.router.navigate(['/shop'], {queryParams:{filter:typeId}})
   }
   
 
