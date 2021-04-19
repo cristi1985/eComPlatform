@@ -30,7 +30,7 @@ export class HomeComponent implements OnInit {
     this.getTypes();
   }
   getTypes() {
-    this.shopService.getTypes().subscribe(response => (this.types = [{ id: 0, name: 'All' }, ...response]), error => {
+    this.shopService.getTypes().subscribe(response => (this.types = [{ id: 0, name: 'Toate' }, ...response]), error => {
       console.log(error)
     });
   }
